@@ -1,0 +1,55 @@
+/** general css **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(105, 105, 255);
+  height: 92vh;
+}
+
+/** header / nav css **/
+
+nav {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around
+}
+
+nav li {
+  list-style-type: none;
+  margin: 5px 10px;
+  font-size: 1.5em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+div#head {
+  float: left;
+  margin: 5px 15px;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: blueviolet;
+  border-bottom: 2px solid black;
+}
+
+/** home section css **/
+
+/** about section css **/
+
+/** project section css **/
+
+/** contact section css **/

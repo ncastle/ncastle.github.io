@@ -7,9 +7,16 @@
 }
 
 body {
-  background-color: rgb(105, 105, 255);
+  /* background-color: rgb(105, 105, 255); */
   /* height: 92vh; */
 }
+
+/* div[id$="top"] {
+  height: 8vh;
+  background-color: inherit;
+  position: relative;
+  bottom: 0;
+} */
 
 /** header / nav css **/
 
@@ -61,16 +68,10 @@ header {
   }
 }
 
-@media screen and (max-width: 720px) {
-  * {
-    display: none;
-  }
-}
-
 /** home section css **/
 
 section#home {
-  height: 92vh;
+  height: 100vh;
   top: 8vh;
   position: relative;
   background-color: yellow;
@@ -95,7 +96,9 @@ section#home {
 /** about section css **/
 
 section#about {
-  height: 50vh;
+  margin-top: 8vh;
+  position: relative;
+  height: 92vh;
   background-color: green;
 }
 
@@ -103,7 +106,8 @@ section#about {
 /** projects section css **/
 
 section#projects {
-  height: 50vh;
+  position: relative;
+  height: 92vh;
   background-color: orange;
 }
 
@@ -111,12 +115,14 @@ section#projects {
 /** contact section css **/
 
 section#contact {
-  height: 50vh;
+  position: relative;
+  height: 92vh;
   background-color: red;
 }
 
 /** footer section css **/
 footer {
+  position: relative;
   height: 10vh;
   background-color: purple;
 }

@@ -8,26 +8,32 @@
 
 body {
   background-color: rgb(105, 105, 255);
-  height: 92vh;
+  /* height: 92vh; */
 }
 
 /** header / nav css **/
 
 nav {
   display: flex;
-  width: 50vw;
-  justify-content: space-around
+  width: 70vw;
+  justify-content: space-around;
 }
 
 nav li {
   list-style-type: none;
   margin: 5px 10px;
   font-size: 1.5em;
+  width: 100%;
+  text-align: center;
 }
 
 nav li a {
   text-decoration: none;
   color: white;
+}
+
+nav li a:hover {
+  color:rgb(255, 217, 50);
 }
 
 div#head {
@@ -42,14 +48,75 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  background-color: blueviolet;
+  width: 100%;
+  background-color: rgba(138, 43, 226, 0.5);
   border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  * {
+    display: none;
+  }
 }
 
 /** home section css **/
 
+section#home {
+  height: 92vh;
+  top: 8vh;
+  position: relative;
+  background-color: yellow;
+}
+
+#home h1 {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;;
+}
+
+#home h3 {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
 /** about section css **/
 
-/** project section css **/
+section#about {
+  height: 50vh;
+  background-color: green;
+}
+
+
+/** projects section css **/
+
+section#projects {
+  height: 50vh;
+  background-color: orange;
+}
+
 
 /** contact section css **/
+
+section#contact {
+  height: 50vh;
+  background-color: red;
+}
+
+/** footer section css **/
+footer {
+  height: 10vh;
+  background-color: purple;
+}

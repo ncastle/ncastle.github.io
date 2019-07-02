@@ -37,9 +37,12 @@ div[id$="-top"] {
 nav {
   display: flex;
   width: 100%;
+  flex-basis: 75%;
 }
 
 nav li {
+  display: flex;
+  justify-content: space-evenly;
   list-style-type: none;
   width: 100%;
 }
@@ -53,13 +56,12 @@ nav li a {
 } */
 
 div#logo {
-  /* float: left; */
   display: flex;
-  height: 100%;
   align-items: center;
-  margin: 5px 15px;
-  padding-right: 15px;
-  /* font-size: 2em; */
+  justify-content: center;
+  height: 100%;
+  flex-basis: 25%;
+  /* align-items: center; */
   font-size: 1.2em;
   color: whitesmoke;
   border-right: 1px solid rgb(138, 43, 226);
@@ -67,7 +69,7 @@ div#logo {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 8vh;
   width: 100%;
@@ -118,20 +120,72 @@ section#home {
 /** about section css **/
 
 section#about {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
   position: relative;
-  height: 92vh;
+  /* height: 92vh; */
   background-color: green;
 }
 
+#about * {
+  margin: 5%;
+}
+
+#about p {
+  width: 65%;
+}
+
+img#headshot {
+  margin: 0 5%;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 22vh;
+  width: 22vh;
+}
+
+#about h5 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2vh;
+}
 
 /** projects section css **/
 
 section#projects {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
   position: relative;
-  height: 92vh;
+  min-height: 92vh;
   background-color: orange;
 }
+section#projects h1 {
+  padding: 5%;
+}
+div.projects {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* justify-content: center;
+  width: 200px;
+  height: 200px; */
+}
 
+section#projects div h3 {
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+#projects h5 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 4.5vh;
+}
 
 /** contact section css **/
 

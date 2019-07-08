@@ -27,13 +27,18 @@ div[id$="-top"] {
   bottom: 7.9vh;
 }
 
-/* div#about-top {
-  position: absolute;
-  bottom: 7.9vh;
-} */
-/* body {
-  overflow: hidden;
-} */
+button#next-button {
+  position: fixed;
+  bottom: 8vh;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+h1.heading {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 1px; 
+  padding: 5%;
+}
 
 /** header / nav css **/
 
@@ -135,7 +140,7 @@ nav li a:active {
     height: 8vh;
     width: 100%;
   }
-  
+
   nav li {
     margin: 2px;
     list-style-type: none;
@@ -181,6 +186,10 @@ section#home {
   text-transform: uppercase;
 }
 
+.home-text {
+  font-family: 'Indie Flower', cursive;
+}
+
 /** about section css **/
 
 section#about {
@@ -193,10 +202,11 @@ section#about {
 }
 
 #about * {
-  margin: 5%;
+  /* margin: 5%; */
 }
 
 #about p {
+  margin-left: 10%;
   width: 65%;
 }
 
@@ -225,9 +235,9 @@ section#projects {
   min-height: 92vh;
   background-color: orange;
 }
-section#projects h1 {
+/* section#projects h1 {
   padding: 5%;
-}
+} */
 div.projects {
   height: 90%;
   display: flex;
@@ -257,6 +267,41 @@ section#contact {
   position: relative;
   height: 92vh;
   background-color: red;
+}
+
+/* #contact h1 {
+  font-size: 1.5em;
+  padding-left: 10%;
+  padding-top: 10%;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 10%;
+}
+
+fieldset {
+  padding: 5%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 1.2em;
+}
+
+form input, form textarea {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+form *:focus {
+  border: 2px solid yellow;
 }
 
 

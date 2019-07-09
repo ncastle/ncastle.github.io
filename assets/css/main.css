@@ -40,6 +40,7 @@ h1.heading {
   padding: 5%;
   color: rgba(235, 235, 235, 0.85);
   text-shadow: 1px 3px 1px rgba(170, 170, 170, 0.98);
+  font-size: 1.5rem;
 }
 
 
@@ -52,7 +53,7 @@ header {
   align-items: center;
   height: 8vh;
   width: 100vw;
-  background-color: rgb(95, 0, 155);
+  background-color: rgb(138, 10, 226);
   /* border-bottom: 2px solid black; */
   position: fixed;
   z-index: 1;
@@ -167,6 +168,7 @@ section#home {
   top: 8vh;
   position: relative;
   background-color: yellow;
+  overflow: hidden;
 }
 
 #home h1 {
@@ -194,8 +196,29 @@ section#home {
 
 .home-text {
   font-family: 'Indie Flower', cursive;
+  position: relative;
+  top: 30%;
 }
 
+.bg1 {
+  position: absolute;
+  width: 200vw;
+  height: 100vh;
+  left: -75vw;
+  top: 10vh;
+  background-color: rgb(255, 200, 0);
+  transform: rotate(45deg);
+}
+
+.bg2 {
+  position: absolute;
+  width: 200vw;
+  height: 75vh;
+  left: -100vw;
+  bottom: -10vh;
+  background-color: orange;
+  transform: rotate(45deg);
+}
 
 
 /**** ABOUT SECTION CSS ****/
@@ -351,7 +374,14 @@ form *:focus {
 
 /**** FOOTER SECTION CSS ****/
 footer {
-  position: relative;
-  height: 10vh;
-  background-color: purple;
+  position: fixed;
+  height: 8vh;
+  width: 100vw;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgb(138, 10, 226);
 }
+/* 
+footer h1 {
+  font-size: 1.2rem;
+} */

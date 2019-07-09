@@ -56,7 +56,7 @@ header {
   background-color: rgb(138, 10, 226);
   /* border-bottom: 2px solid black; */
   position: fixed;
-  z-index: 1;
+  z-index: 3;
 }
 
 div#logo {
@@ -298,6 +298,8 @@ section#projects {
   position: relative;
   min-height: 92vh;
   background-color: orange;
+  overflow: hidden;
+  z-index: 2;
 }
 
 div.projects {
@@ -313,6 +315,7 @@ div.projects {
 
 .projects h3 {
   padding: 1.2em 0;
+  margin-top: 3em;
   text-align: center;
 }
 
@@ -326,10 +329,32 @@ div.projects {
 }
 
 #projects img {
-  height: 200px;
-  width: 200px;
+  position: relative;
+  height: 220px;
+  width:  220px;
+  top: 11px;
+  left: 11px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.project-bg {
+  width: 245px;
+  height: 245px;
+  background-color: rgb(223, 167, 15);
   border: 2px solid rgb(42, 42, 42);
   border-radius: 3px;
+}
+
+.bg3 {
+  position: absolute;
+  width: 200vh;
+  height: 100vw;
+  transform: rotate(-60deg);
+  bottom: 30%;
+  left: -120%;
+  background-color: rgba(255, 69, 0, 0.5);
+  z-index: -1;
 }
 
 

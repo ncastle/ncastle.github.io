@@ -301,6 +301,13 @@ div.projects {
   /* padding-top: 8.5vh; */
 }
 
+#projects img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid rgb(42, 42, 42);
+  border-radius: 3px;
+}
+
 
 
 /**** CONTACT SECTION CSS ****/

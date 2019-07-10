@@ -102,9 +102,6 @@ nav li a {
   transform: translateY(0%);
 }
 
-nav li a.active {
-  background-color: yellow;
-}
 
 .burger {
   display: block;
@@ -121,10 +118,6 @@ nav li a.active {
 
 nav li a:visited {
   color:whitesmoke;
-}
-
-nav li a:active {
-  color: red;
 }
 
 
@@ -243,15 +236,19 @@ section#about {
 
 #about p {
   margin-left: 5%;
-  width: 70%;
+  width: 80%;
 }
 
 .skillHeader {
   font-size: 0.9em;
+  margin-left: 5%;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .skill {
   list-style-position: inside;
+  list-style-type: circle;
   margin-left: 5%;
   margin-top: 3px;
   margin-bottom: 2px;
@@ -314,6 +311,13 @@ img#headshot {
   z-index: -2;
 }
 
+div.about-section {
+  margin: 1em 5%;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgba(4, 110, 4, 0.75);
+  padding: 3%;
+}
 
 /**** PROJECTS SECTION CSS ****/
 
@@ -458,8 +462,24 @@ footer {
   bottom: 0;
   z-index: 3;
   background-color: rgb(138, 10, 226);
+  color: whitesmoke;
 }
-/* 
-footer h1 {
-  font-size: 1.2rem;
-} */
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+footer a:visited {
+  color: whitesmoke;
+}

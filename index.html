@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#6b2be2"/>
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Russo+One&display=swap" rel="stylesheet">
-
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Nick Castle's Portfolio</title>
 </head>
 <body>
@@ -50,36 +51,46 @@
     <h1 class="heading">About</h1>
     <!-- image links to linkedin? -->
     <img id="headshot" src="assets/images/headshot.jpeg" alt="linked in headshot">
-    <h3>Bio:</h3>
-    <!-- too much bio??? cut this down somehow -->
-    <p>Born on the island of Hawaii and raised in Suburban Vermont, I am a Software and Web Developer looking for a role and experience in the field. I graduated from Colchester High School in 2014 and began the pursuit for my Bachelor's Degree in Computer Science at the University of Vermont that Fall. I've been tech savvy and interested in technology for as long as I can remember. Now with a CS degree and some programming experience, I can expand my knowledge and interest in all things tech.</p>
+    <div class="about-section">
+      <h3>Bio:</h3>
+      <!-- too much bio??? cut this down somehow -->
+      <p>Born on the island of Hawaii and raised in Suburban Vermont, I am a Software and Web Developer looking for a role and experience in the field. I graduated from Colchester High School in 2014 and began the pursuit for my Bachelor's Degree in Computer Science at the University of Vermont that Fall. I've been tech savvy and interested in technology for as long as I can remember. Now with a CS degree and some programming experience, I can expand my knowledge and interest in all things tech.</p>
+    </div>
 
-    <h3>Hobbies / Interests:</h3>
-    <p>Some of my favorite things to do in my free time are playing video games (mostly NBA2K), working out, playing and watching basketball, any outdoor activity that can get me in the sun like going to the beach or swimming at the pool. I love music, beer, (most) animals, and I'm pretty damn good at solving a rubik's cube.</p>
+    <div class="about-section">
+      <h3>Hobbies / Interests:</h3>
+      <p>Some of my favorite things to do in my free time are playing video games (mostly NBA2K), working out, playing and watching basketball, any outdoor activity that can get me in the sun like going to the beach or swimming at the pool. I love music, beer, (most) animals, and I'm pretty damn good at solving a rubik's cube.</p>
+    </div>
 
-    <h3 id="skillList">Skills</h3>
-    <ul>
+    <div class="about-section">
+      <h3 id="skillList">Skills</h3>
       <h4 class="skillHeader">Languages and technologies:</h4>
-      <li class="skill">HTML, CSS, JavaScript, Node.js</li>
-      <li class="skill">Java, Python, C*, C++*</li>
-      <li class="skill">JavaFX*, MVC*, XML*</li>
-
+      <ul>
+        <li class="skill">HTML, CSS, JavaScript, Node.js</li>
+        <li class="skill">Java, Python, C*, C++*</li>
+        <li class="skill">JavaFX*, MVC*, XML*</li>
+      </ul>
       <h4 class="skillHeader">Version Control:</h4>
-      <li class="skill">Git, Github, Gitlab</li>
-      
+      <ul>
+        <li class="skill">Git, Github, Gitlab</li>
+      </ul>
       <h4 class="skillHeader">Development methodologies:</h4>
-      <li class="skill">Waterfall, Iterative, Scrum, Agile</li>
-      
+      <ul> 
+        <li class="skill">Waterfall, Iterative, Scrum, Agile</li>
+      </ul>
       <h4 class="skillHeader">Other:</h4>
-      <li class="skill">Windows, Linux</li>
-      <li class="skill">Terminal/Command Prompt</li>
-      <li class="skill">MATLAB*</li>
-      <li class="skill">Microsoft Office (Word & Excel)</li>
-    </ul>
+      <ul>  
+        <li class="skill">Windows, Linux</li>
+        <li class="skill">Terminal/Command Prompt</li>
+        <li class="skill">MATLAB*</li>
+        <li class="skill">Microsoft Office (Word & Excel)</li>
+      </ul>
+    </div>
 
-    <h3>Location</h3>
-
-    <p>Born in Honolulu, HI -> Raised in Colchester, VT -> College in Burlington, VT -> Living in Winooski, VT -> Where to Next?</p>
+    <div class="about-section">
+      <h3>Location</h3>
+      <p>Born in Honolulu, HI -> Raised in Colchester, VT -> College in Burlington, VT -> Living in Winooski, VT -> Where to Next?</p>
+    </div>
     <h5><a href="#projects-top">next</a></h5>
   </section>
   
@@ -142,12 +153,18 @@
     <div class="contact-info">
       <li>Call Me: (802)233-8773</li>
       <li>Email Me: castle5896@gmail.com</li>
+      <li>Resume: <a href="assets/NICK C RESUME.pdf" download>Download Here</a></li>
     </div>
   </section>
 
   <!-- footer -->
   <footer id="footer">
-    <h1 class="heading">I'm the footer</h1>
+    <!-- <h1 class="heading">I'm the footer</h1> -->
+    <ul>
+      <li>&copy; NCastle Development</li>
+      <li><a href="mailto:castle5896@gmail.com">castle5896@gmail.com</a></li>
+      <li>Github: <a href="https://github.com/ncastle">ncastle</a></li>
+    </ul>
   </footer>
   <script src="main.js"></script>
 </body>

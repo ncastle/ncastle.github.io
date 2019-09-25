@@ -14,8 +14,6 @@ body {
   Geneva,
   Verdana,
   sans-serif;
-  /* background-color: rgb(105, 105, 255); */
-  /* height: 92vh; */
 }
 
 a {
@@ -44,7 +42,6 @@ h1.heading {
 }
 
 
-
 /**** HEADER/NAV CSS ****/
 
 header {
@@ -61,11 +58,9 @@ header {
 
 div#logo {
   text-align: center;
-  /* height: 100%; */
   flex-basis: 80%;
   font-size: 1.2em;
   color: whitesmoke;
-  /* border-right: 1px solid rgb(138, 43, 226); */
 }
 
 nav {
@@ -93,7 +88,6 @@ nav li {
 }
 
 nav li a {
-  /* width: 100%; */
   background-color: rgb(138, 10, 226);
   color: whitesmoke;
 }
@@ -101,7 +95,6 @@ nav li a {
 .nav-open {
   transform: translateY(0%);
 }
-
 
 .burger {
   display: block;
@@ -120,7 +113,6 @@ nav li a:visited {
   color:whitesmoke;
 }
 
-
 @media screen and (min-width: 768px) {
   header {
     justify-content: space-between;
@@ -130,23 +122,17 @@ nav li a:visited {
   }
   nav {
     position: static;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
     transform: translateY(0%);
     height: 8vh;
     width: 100%;
   }
-
   nav li {
     margin: 2px;
     list-style-type: none;
     text-align: center;
-    /* width:100%; */
   }
   nav li a {
-    /* width: 100%; */
-    /* background-color: rgb(191, 134, 245); */
     color: whitesmoke;
   }
 }
@@ -168,14 +154,14 @@ section#home {
   top: 30%;
   text-align: center;
   font-size: 3em;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: 5px solid #50B6BB;
   white-space: nowrap;
   margin: 0 auto;
-  width: 80%;
-  animation: typing 3.5s steps(20, end),
-             blink-caret .5s step-end normal;
+  width: 12ch;
+  animation: type 2.5s steps(12),
+             blink-caret 2.5s steps(12) normal ;
 }
 
 #home h3 {
@@ -239,17 +225,12 @@ section#home {
   }
 }
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+@keyframes type{
+  from{width: 0ch;}
+  to{width: 12ch;}
 }
-@keyframes typing{
-  from{width: 0;}
-  to{width: 80%;}
-}
-@keyframes blinkTextCursor{
-  from, to { border-color: orange }
+@keyframes blink-caret{
+  from, to { border-color: #50B6BB }
   50% { border-color: transparent }
 }
 
@@ -264,13 +245,12 @@ section#about {
   z-index: 2;
   color: rgb(214, 214, 214);
   font-weight: bold;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #about *:not(img) {
   padding-left: 5%;
 }
-
 
 #about p {
   margin-left: 5%;
@@ -278,7 +258,7 @@ section#about {
 }
 
 .skillHeader {
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin-left: 5%;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -308,7 +288,7 @@ img#headshot {
 }
 
 #about h3#skillList::after {
-  content: " (* means some experience)";
+  content: " (* some experience)";
   font-size: 0.65em;
 }
 
